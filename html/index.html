@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khuyến mãi</title>
+  </head>
+
+  <body>
+    <div>
+      <a href="https://vi.wikipedia.org/wiki/Burrito" target="_blank">
+        <img
+          src="https://assets-2.placeit.net/smart_templates/c1ebb9fb711f4aded815dc4cb143dfa8/assets/d1ea0e075dbb8c3601ea44983e181de8.png"
+          alt="Burrito"
+        />
+      </a>
+      <h1>Bạn đã biết đến Burrito?</h1>
+      <p>
+        <strong>Burrito</strong> là một món bánh truyền thống của Mexico, có hai
+        thành phần chính đó là <mark>vỏ bánh</mark> và <mark>nhân bánh</mark> Sự
+        kết hợp giữa các thành phần trong món bánh Burrito này mang đến cho
+        người thưởng thức cảm giác thích thú, ngon miệng và bị cuốn hút bởi độ
+        dai giòn của vỏ bánh kết hợp với phần nhân bánh thơm ngon.
+      </p>
+      <section>
+        <h3>Bánh Burrito có bao nhiêu loại nhân?</h3>
+        <p>
+          <strong>Burrito</strong> là món bánh đặc biệt bởi nó có thể kết hợp
+          với nhiều loại nhân khác nhau, người thưởng thức sẽ không lo ngán
+        </p>
+        <p>Các loại nhân thường gặp là:</p>
+        <ul>
+          <li>Thịt gà</li>
+          <li>Thịt lợn</li>
+          <li>Thịt bò</li>
+          <li>Hải sản</li>
+          <li>Bắp</li>
+          <li>Rau củ</li>
+        </ul>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Nhân</th>
+            <th colspan="2">Gía</th>
+          </tr>
+          <tr>
+            <th></th>
+            <td align="center">Gốc</td>
+            <td align="center">Khuyến Mãi</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td align="center">1000</td>
+            <td align="center">599</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td align="center">1000</td>
+            <td align="center">599</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td align="center">1000</td>
+            <td align="center">599</td>
+          </tr>
+        </tbody>
+      </table>
+      <section>
+        <h3>Hãy làm các 3 bước sau để được nhận khuyến mãi?</h3>
+        <ol>
+          <li>Điền theo mẫu form dưới đây</li>
+          <li>Chọn loại nhân yêu thích</li>
+          <li>Submit để nhận về ưu đãi đặc biệt</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Form Đăng Ký Khuyến Mãi</h3>
+
+        <form onsubmit="window.alert('Bạn đã đăng ký khuyến mãi thành công')">
+          <div>
+            <label for="name">Tên: </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Nhập tên"
+              autofocus
+              autocomplete="off"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Nhập email" required />
+          </div>
+          <br />
+          <div>
+            <label for="code">Code giới thiệu: </label>
+            <input
+              id="code"
+              type="password"
+              placeholder="Nhập password"
+              autocomplete="new-password"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="amount">Số lượng Burrito: </label>
+            <input id="amount" type="number" min="0" max="10" value="0" />
+          </div>
+          <br />
+          <div>
+            <label for="gender-male">Nam: </label>
+            <input id="gender-male" name="gender" type="radio" value="0" />
+
+            <label for="gender-female">Nữ: </label>
+            <input id="gender-female" name="gender" type="radio" value="1" />
+          </div>
+
+          <div>
+            <label for="option1">Thêm rau ăn kèm </label>
+            <input id="option1" name="option" type="checkbox" value="0" />
+
+            <label for="option2">Thêm sốt chấm Burrito </label>
+            <input id="option2" name="option" type="checkbox" value="1" />
+          </div>
+          <br />
+          <div>
+            <label for="note">Ghi chú:</label>
+            <div>
+              <textarea
+                id="note"
+                value=""
+                cols="20"
+                rows="4"
+                placeholder="Nhập ghi chú"
+              ></textarea>
+            </div>
+          </div>
+          <br />
+          <div>
+            <label for="select">Nhân Burrito:</label>
+            <select id="select">
+              <option value="chicken">Thịt gà</option>
+              <option value="pork">Thịt lợn</option>
+              <option value="beef">Thịt bò</option>
+              <option value="seafood">Hải sản</option>
+              <option value="corn">Bắp</option>
+              <option value="vegetable">Rau củ</option>
+            </select>
+          </div>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
