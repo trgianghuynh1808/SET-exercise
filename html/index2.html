@@ -7,13 +7,13 @@
     <title>Document</title>
   </head>
   <body>
-    <form onsubmit="window.alert('hello')">
+    <form onsubmit="window.alert('Bạn đã đăng ký khuyến mãi thành công')">
       <div>
-        <label for="name">Name: </label>
+        <label for="name">Tên: </label>
         <input
           id="name"
           type="text"
-          placeholder="Enter name"
+          placeholder="Nhập tên"
           autofocus
           autocomplete="off"
           required
@@ -22,60 +22,62 @@
       <br />
       <div>
         <label for="email">Email: </label>
-        <input id="email" type="email" placeholder="Enter email" required />
+        <input id="email" type="email" placeholder="Nhập email" required />
       </div>
       <br />
       <div>
-        <label for="password">Password: </label>
+        <label for="code">Code giới thiệu: </label>
         <input
-          id="password"
+          id="code"
           type="password"
-          placeholder="Enter password"
+          placeholder="Nhập password"
           autocomplete="new-password"
         />
       </div>
       <br />
       <div>
-        <label for="amount">Amount: </label>
+        <label for="amount">Số lượng Burrito: </label>
         <input id="amount" type="number" min="0" max="10" value="0" />
       </div>
       <br />
       <div>
-        <label for="gender-male">Male: </label>
+        <label for="gender-male">Nam: </label>
         <input id="gender-male" name="gender" type="radio" value="0" />
 
-        <label for="gender-female">Female: </label>
+        <label for="gender-female">Nữ: </label>
         <input id="gender-female" name="gender" type="radio" value="1" />
       </div>
 
       <div>
-        <label for="option1">Option 1: </label>
+        <label for="option1">Thêm rau ăn kèm </label>
         <input id="option1" name="option" type="checkbox" value="0" />
 
-        <label for="option2">Option 2: </label>
+        <label for="option2">Thêm sốt chấm Burrito </label>
         <input id="option2" name="option" type="checkbox" value="1" />
       </div>
       <br />
       <div>
-        <label for="note">Note:</label>
+        <label for="note">Ghi chú:</label>
         <div>
           <textarea
             id="note"
             value=""
             cols="20"
             rows="4"
-            placeholder="Enter note"
+            placeholder="Nhập ghi chú"
           ></textarea>
         </div>
       </div>
       <br />
       <div>
-        <label for="select">Language:</label>
+        <label for="select">Nhân Burrito:</label>
         <select id="select">
-          <option value="html">HTML</option>
-          <option value="css">CSS</option>
-          <option value="javascript">JavaScript</option>
-          <option value="react">React</option>
+          <option value="chicken">Thịt gà</option>
+          <option value="pork">Thịt lợn</option>
+          <option value="beef">Thịt bò</option>
+          <option value="seafood">Hải sản</option>
+          <option value="corn">Bắp</option>
+          <option value="vegetable">Rau củ</option>
         </select>
       </div>
       <br />
