@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="window.alert('hello')">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter name"
+          autofocus
+          autocomplete="off"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email: </label>
+        <input id="email" type="email" placeholder="Enter email" required />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter password"
+          autocomplete="new-password"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="amount">Amount: </label>
+        <input id="amount" type="number" min="0" max="10" value="0" />
+      </div>
+      <br />
+      <div>
+        <label for="gender-male">Male: </label>
+        <input id="gender-male" name="gender" type="radio" value="0" />
+
+        <label for="gender-female">Female: </label>
+        <input id="gender-female" name="gender" type="radio" value="1" />
+      </div>
+
+      <div>
+        <label for="option1">Option 1: </label>
+        <input id="option1" name="option" type="checkbox" value="0" />
+
+        <label for="option2">Option 2: </label>
+        <input id="option2" name="option" type="checkbox" value="1" />
+      </div>
+      <br />
+      <div>
+        <label for="note">Note:</label>
+        <div>
+          <textarea
+            id="note"
+            value=""
+            cols="20"
+            rows="4"
+            placeholder="Enter note"
+          ></textarea>
+        </div>
+      </div>
+      <br />
+      <div>
+        <label for="select">Language:</label>
+        <select id="select">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="react">React</option>
+        </select>
+      </div>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
